@@ -15,3 +15,5 @@ hi
 ```
 
 Thanks for this [book](https://github.com/ro31337/rubyisforfun).
+
+# Please create an Issue or a PR if you find a typo or something.
