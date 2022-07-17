@@ -1,3 +1,3 @@
-# Documenting my Learning Whenever I can Whatever content possible!
+# Today I Learned
 
 Inspired by [This](https://github.com/jbranchaud/til)
