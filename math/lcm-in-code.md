@@ -2,6 +2,7 @@ https://adventofcode.com/2023/day/8
 
 Today while solving advent of code 2023 day 8 part 2, I found an interesting pattern,
 
+```
 11A 22A
 11B 22B
 11Z 22C
@@ -18,6 +19,7 @@ Today while solving advent of code 2023 day 8 part 2, I found an interesting pat
 11Z 22Z
 
 (Repeats...)
+```
 
 We can see that 11A reaches 11Z after every 2 steps and 22A reaches 22Z after every 3 steps. In the 6th step they both have reached Z. 
 That's the step we need to find.
