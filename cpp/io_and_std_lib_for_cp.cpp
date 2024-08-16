@@ -18,6 +18,8 @@ int main()
     */
     ios::sync_with_stdio(0);
     cin.tie(0);
+    // This could be the reason why we don't see any outputs when use \n instead of endl in all places.
+    // because this prevents cin from flushing cout
 
     /* `endl` is significantly slower than `\n`, Added the use case below. */
     auto start1 = high_resolution_clock::now();
@@ -27,6 +29,7 @@ int main()
     }
     auto end1 = high_resolution_clock::now();
     auto duration1 = duration_cast<microseconds>(end1 - start1).count();
+    cout << "hello";
 
     auto start2 = high_resolution_clock::now();
     for (int i = 0; i < 1000; ++i)
@@ -48,6 +51,43 @@ int main()
     // Time taken (\n): 271 microseconds
     // Time taken: (endl)8343 microseconds
 
+    // int a, b;
+    // scanf("%d %d", &a, &b);
+    // printf("%d %d\n", a, b);
+
+    // Example of Output buffer flush:
+    // Here, you don't see the output until the end.
+    string s;
+    // getline(cin, s);
+    // cout << s << "\n";
+
+    while (cin >> s)
+    {
+        cout << "herehere";
+        if (s == "a")
+        {
+            break;
+        }
+        for (int i = 0; i < 10; ++i)
+        {
+            cout << s << "\n";
+        }
+    }
+    // cout << flush;
+
+    // Here, you will see the output immediatley.
+    while (cin >> s)
+    {
+        cout << "herehere";
+        if (s == "a")
+        {
+            break;
+        }
+        for (int i = 0; i < 10; ++i)
+        {
+            cout << s << endl;
+        }
+    }
     return 0;
 }
 
