@@ -5,3 +5,22 @@ https://stackoverflow.com/a/78534060
 https://stackoverflow.com/a/57326013
 
 Remove data directory and install if symlink not created then use `brew link postgresql@15`
+
+Finding locks,
+
+```sql
+SELECT a.datname,
+     c.relname,
+     l.transactionid,
+     l.mode,
+     l.GRANTED,
+     a.usename,
+     a.query, 
+     a.query_start,
+     age(now(), a.query_start) AS "age", 
+     a.pid 
+FROM  pg_stat_activity a
+ JOIN pg_locks         l ON l.pid = a.pid
+ JOIN pg_class         c ON c.oid = l.relation
+ORDER BY a.query_start;
+```
