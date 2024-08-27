@@ -24,3 +24,6 @@ FROM  pg_stat_activity a
  JOIN pg_class         c ON c.oid = l.relation
 ORDER BY a.query_start;
 ```
+
+For psycopg issues with broken symlinks,
+`ln -s /opt/homebrew/opt/postgresql@14/lib/postgresql@14/libpq.5.dylib /opt/homebrew/opt/postgresql/lib/libpq.5.dylib`
