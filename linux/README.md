@@ -15,4 +15,8 @@ Gpustat
 
 ```sh
 gpustat -cp
+
+watch -n 0.5 -c gpustat -cp --color
+
+gpustat -cp --watch
 ```
