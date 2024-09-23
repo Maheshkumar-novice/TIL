@@ -20,3 +20,9 @@ watch -n 0.5 -c gpustat -cp --color
 
 gpustat -cp --watch
 ```
+
+To exit or exit hung up ssh connection,
+
+```sh
+~.
+```
