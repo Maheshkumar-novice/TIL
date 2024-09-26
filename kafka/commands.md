@@ -1,0 +1,5 @@
+List consumer groups
+
+```sh
+kafka-consumer-groups --bootstrap-server localhost:9092 --describe --all-groups
+```
