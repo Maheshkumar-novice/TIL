@@ -26,3 +26,10 @@ To exit or exit hung up ssh connection,
 ```sh
 ~.
 ```
+
+To view thread info (https://unixhealthcheck.com/blog?id=465)
+
+```sh
+ps -T -p <pid>
+```
+
