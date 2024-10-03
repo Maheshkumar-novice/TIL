@@ -31,3 +31,9 @@ def test_stats_cb():
         kc.poll(timeout=0.1)
     kc.close()
 ```
+
+Confluent kafka logging,
+
+https://github.com/confluentinc/confluent-kafka-python/blob/master/tests/test_log.py
+
+We can use `debug` and `logger` conf.
