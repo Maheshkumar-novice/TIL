@@ -19,3 +19,7 @@ kubectl get deployment -n <namespace>
 ```sh
 kubectl describe pod <pod_name> -n <namespace>
 ```
+
+```sh
+kubectl top pod <pod_name> -n <namespace>
+```
