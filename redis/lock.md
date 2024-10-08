@@ -8,3 +8,4 @@ I've explored `redis locking` mechanism in the redis-py. As far as I read, it sh
 * https://dzone.com/articles/distributed-lock-implementation-with-redis
 * https://redis.io/docs/latest/develop/use/patterns/distributed-locks/
 * https://redis.io/glossary/redis-lock/
+* https://redis.io/docs/latest/commands/set/
