@@ -29,6 +29,12 @@ To exit or exit hung up ssh connection,
 
 To view thread info (https://unixhealthcheck.com/blog?id=465)
 
+Finding folder size
+
+```sh
+du -sh $(ls -A)
+```
+
 ```sh
 ps -T -p <pid>
 ```
