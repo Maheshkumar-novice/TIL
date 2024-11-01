@@ -1,3 +1,14 @@
+Screen Freezing Solution: https://askubuntu.com/questions/4408/what-should-i-do-when-ubuntu-freezes
+
+While holding Alt and the SysReq (Print Screen) keys, type REISUB
+
+R:  Switch to XLATE mode
+E:  Send Terminate signal to all processes except for init
+I:  Send Kill signal to all processes except for init
+S:  Sync all mounted file-systems
+U:  Remount file-systems as read-only
+B:  Reboot
+
 To read from stdin and write to file
 
 ```sh
