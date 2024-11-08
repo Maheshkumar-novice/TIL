@@ -1,3 +1,7 @@
+Debugging resources,
+* https://pypi.org/project/remote-pdb/ Remote debug multiprocess env like connector
+* https://github.com/kmaork/madbg - To attach debugger to existing process
+
 Finding a package before installing,
 
 https://github.com/huggingface/accelerate/blob/main/src/accelerate/utils/imports.py#L49
