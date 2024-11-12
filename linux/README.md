@@ -61,3 +61,11 @@ In vim,
 :%s/old/new/g - global
 :s/old/new/g - current line
 ```
+
+getting 2nd column of `ps -aux`
+
+```sh
+ps | cut -d' ' -f2
+
+ps | awk '{print $2}'
+```
