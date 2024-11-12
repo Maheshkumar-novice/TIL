@@ -50,3 +50,14 @@ du -sh $(ls -A)
 ps -T -p <pid>
 ```
 
+To replace a piece of text using `sed` in a file,
+```sh
+sed -i '' -e s/old/new/g <file>
+```
+
+In vim,
+
+```sh
+:%s/old/new/g - global
+:s/old/new/g - current line
+```
