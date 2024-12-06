@@ -7,3 +7,5 @@ git rebase --root -x "git commit --amend --author 'Maheshkumar P <email>' --no-e
 ```
 
 https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-a-single-commit
+
+https://stackoverflow.com/a/73857920
