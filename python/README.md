@@ -34,3 +34,10 @@ if is_rich_available():
     FORMAT = "%(message)s"
     logging.basicConfig(format=FORMAT, datefmt="[%X]", handlers=[RichHandler()])
 ```
+
+
+Instead of using replace to replace chars in chain, try to use `maketrans` and `translate`.
+
+```py
+string.translate(str.maketrans("501", "SOI"))
+```
