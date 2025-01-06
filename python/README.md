@@ -41,3 +41,7 @@ Instead of using replace to replace chars in chain, try to use `maketrans` and `
 ```py
 string.translate(str.maketrans("501", "SOI"))
 ```
+
+`|` vs `+`
+
+https://stackoverflow.com/questions/55498263/bitwise-or-versus-addition-for-positive-powers-of-two-in-python
