@@ -45,3 +45,10 @@ string.translate(str.maketrans("501", "SOI"))
 `|` vs `+`
 
 https://stackoverflow.com/questions/55498263/bitwise-or-versus-addition-for-positive-powers-of-two-in-python
+
+
+```python
+a = [1]
+print(a[False])
+print(False - True)
+```
