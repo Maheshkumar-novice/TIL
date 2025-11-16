@@ -69,3 +69,6 @@ ps | cut -d' ' -f2
 
 ps | awk '{print $2}'
 ```
+
+
+`find /path/to/folder -type f -iname "*.mp3" | wc -l`
